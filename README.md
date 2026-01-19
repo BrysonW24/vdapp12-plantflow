@@ -1,6 +1,12 @@
 # PlantFlow
 
-Industrial plant and machinery hire platform for fleet visibility, contracts, and returns.
+A Vivacity Digital Expo app with standard navigation, theming, and UI scaffolding.
+
+## Overview
+
+- App slug: `plantflow`
+- iOS bundle ID: `com.vivacity.plantflow`
+- Android package: `com.vivacity.plantflow`
 
 ## Quick start
 
@@ -12,6 +18,13 @@ npm run ios
 ## Scripts
 
 - `npm run ios` - run on iOS simulator
+- `npm run ios:simulator` - iOS with cache clear
 - `npm run android` - run on Android emulator
 - `npm run web` - run on web
-- `npm run ios:simulator` - iOS with cache clear
+
+## App Store prep (EAS)
+
+```bash
+eas build -p ios --profile production
+eas submit -p ios --profile production
+```
